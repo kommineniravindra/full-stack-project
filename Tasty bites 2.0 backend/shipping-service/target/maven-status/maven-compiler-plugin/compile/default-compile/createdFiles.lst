@@ -1,0 +1,5 @@
+com\sathya\shipping\service\ShippingService.class
+com\sathya\shipping\repository\ShippingRepository.class
+com\sathya\shipping\model\Shipping.class
+com\sathya\shipping\controller\ShippingController.class
+com\sathya\shipping\ShippingApplication.class

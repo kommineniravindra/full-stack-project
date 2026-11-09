@@ -1,0 +1,64 @@
+/* 
+  html {
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}  */
+  body,
+html {
+  margin: 0;
+  padding: 0;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+  display: none;
+}
+  
+.image-slider-container {
+  height: 100vh; /* or your preferred height */
+}
+
+.slider-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 0;
+  transition: opacity 1.2s ease-in-out;
+  width: 100%;
+  height: 100%;
+}
+
+.slider-item.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.media {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
